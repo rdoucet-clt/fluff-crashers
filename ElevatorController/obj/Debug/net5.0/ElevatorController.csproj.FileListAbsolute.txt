@@ -1,0 +1,12 @@
+C:\Copperleaf\Develop\fluff-crashers\ElevatorController\obj\Debug\net5.0\ElevatorController.csproj.AssemblyReference.cache
+C:\Copperleaf\Develop\fluff-crashers\ElevatorController\obj\Debug\net5.0\ElevatorController.GeneratedMSBuildEditorConfig.editorconfig
+C:\Copperleaf\Develop\fluff-crashers\ElevatorController\obj\Debug\net5.0\ElevatorController.AssemblyInfoInputs.cache
+C:\Copperleaf\Develop\fluff-crashers\ElevatorController\obj\Debug\net5.0\ElevatorController.AssemblyInfo.cs
+C:\Copperleaf\Develop\fluff-crashers\ElevatorController\obj\Debug\net5.0\ElevatorController.csproj.CoreCompileInputs.cache
+C:\Copperleaf\Develop\fluff-crashers\ElevatorController\bin\Debug\net5.0\ElevatorController.deps.json
+C:\Copperleaf\Develop\fluff-crashers\ElevatorController\bin\Debug\net5.0\ElevatorController.dll
+C:\Copperleaf\Develop\fluff-crashers\ElevatorController\bin\Debug\net5.0\ElevatorController.pdb
+C:\Copperleaf\Develop\fluff-crashers\ElevatorController\obj\Debug\net5.0\ElevatorController.dll
+C:\Copperleaf\Develop\fluff-crashers\ElevatorController\obj\Debug\net5.0\refint\ElevatorController.dll
+C:\Copperleaf\Develop\fluff-crashers\ElevatorController\obj\Debug\net5.0\ElevatorController.pdb
+C:\Copperleaf\Develop\fluff-crashers\ElevatorController\obj\Debug\net5.0\ref\ElevatorController.dll

@@ -1,0 +1,7 @@
+
+        public class Objective 
+        {
+            public int Kilos { get; set;}
+            public int fromFloor { get; set;}
+            public int  ToFloor { get; set; }
+        }

@@ -1,0 +1,12 @@
+C:\Copperleaf\Develop\fluff-crashers\WorldController\obj\Debug\net5.0\WorldController.csproj.AssemblyReference.cache
+C:\Copperleaf\Develop\fluff-crashers\WorldController\obj\Debug\net5.0\WorldController.GeneratedMSBuildEditorConfig.editorconfig
+C:\Copperleaf\Develop\fluff-crashers\WorldController\obj\Debug\net5.0\WorldController.AssemblyInfoInputs.cache
+C:\Copperleaf\Develop\fluff-crashers\WorldController\obj\Debug\net5.0\WorldController.AssemblyInfo.cs
+C:\Copperleaf\Develop\fluff-crashers\WorldController\obj\Debug\net5.0\WorldController.csproj.CoreCompileInputs.cache
+C:\Copperleaf\Develop\fluff-crashers\WorldController\bin\Debug\net5.0\WorldController.deps.json
+C:\Copperleaf\Develop\fluff-crashers\WorldController\bin\Debug\net5.0\WorldController.dll
+C:\Copperleaf\Develop\fluff-crashers\WorldController\bin\Debug\net5.0\WorldController.pdb
+C:\Copperleaf\Develop\fluff-crashers\WorldController\obj\Debug\net5.0\WorldController.dll
+C:\Copperleaf\Develop\fluff-crashers\WorldController\obj\Debug\net5.0\refint\WorldController.dll
+C:\Copperleaf\Develop\fluff-crashers\WorldController\obj\Debug\net5.0\WorldController.pdb
+C:\Copperleaf\Develop\fluff-crashers\WorldController\obj\Debug\net5.0\ref\WorldController.dll

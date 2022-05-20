@@ -1,0 +1,12 @@
+C:\Copperleaf\Develop\fluff-crashers\TimeService\obj\Debug\net5.0\TimeService.csproj.AssemblyReference.cache
+C:\Copperleaf\Develop\fluff-crashers\TimeService\obj\Debug\net5.0\TimeService.GeneratedMSBuildEditorConfig.editorconfig
+C:\Copperleaf\Develop\fluff-crashers\TimeService\obj\Debug\net5.0\TimeService.AssemblyInfoInputs.cache
+C:\Copperleaf\Develop\fluff-crashers\TimeService\obj\Debug\net5.0\TimeService.AssemblyInfo.cs
+C:\Copperleaf\Develop\fluff-crashers\TimeService\obj\Debug\net5.0\TimeService.csproj.CoreCompileInputs.cache
+C:\Copperleaf\Develop\fluff-crashers\TimeService\bin\Debug\net5.0\TimeService.deps.json
+C:\Copperleaf\Develop\fluff-crashers\TimeService\bin\Debug\net5.0\TimeService.dll
+C:\Copperleaf\Develop\fluff-crashers\TimeService\bin\Debug\net5.0\TimeService.pdb
+C:\Copperleaf\Develop\fluff-crashers\TimeService\obj\Debug\net5.0\TimeService.dll
+C:\Copperleaf\Develop\fluff-crashers\TimeService\obj\Debug\net5.0\refint\TimeService.dll
+C:\Copperleaf\Develop\fluff-crashers\TimeService\obj\Debug\net5.0\TimeService.pdb
+C:\Copperleaf\Develop\fluff-crashers\TimeService\obj\Debug\net5.0\ref\TimeService.dll
