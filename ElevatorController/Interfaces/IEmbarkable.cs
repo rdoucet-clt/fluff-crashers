@@ -4,5 +4,6 @@ namespace ElevatorController.Interfaces
     {
         int ToFloor { get; }
         public int Kilos { get; }
+        public Direction Direction{ get; }
     }
 }

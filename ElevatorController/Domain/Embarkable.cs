@@ -11,12 +11,15 @@ namespace ElevatorController.Domain
 
         public int Passengers => throw new NotImplementedException();
 
-        public Direction GetDirection() {
-            if (fromFloor > ToFloor) {
-                return Direction.Down;
+        public Direction Direction {
+            get 
+            {
+                if (fromFloor > ToFloor) {
+                    return Direction.Down;
             }
 
-            return Direction.Up;
+                return Direction.Up;
+            }
         }
     }
 }

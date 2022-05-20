@@ -18,12 +18,12 @@ namespace ElevatorController.Domain
             if(!_embarkable.Any()) return;
 
             var direction = elevator.CurrentDirection == Direction.None 
-                                ? _embarkable.First().GetDirection()
+                                ? _embarkable.First().Direction
                                 : elevator.CurrentDirection;
             
             foreach (var embarkable in _embarkable.ToArray())
             {
-                if (embarkable.GetDirection() != direction) continue;
+                if (embarkable.Direction != direction) continue;
 
                 try 
                 {

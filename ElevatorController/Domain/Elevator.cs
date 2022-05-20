@@ -1,6 +1,10 @@
 
 using System;
+using System.Collections.Generic;
 using ElevatorController.Interfaces;
+using System.Collections;
+using System.Threading;
+using System.Linq;
 
 namespace ElevatorController.Domain
 {
@@ -11,8 +15,10 @@ namespace ElevatorController.Domain
         public int MaxCapacity { get; set; }
         public ElevatorState CurrentState { get; set; } = ElevatorState.Idle;
         public int CurrentFloor { get; set; }
-        public int TargetFloor { get; set; }
+
         public int MaxFloor { get; set; }
+
+        private List<IEmbarkable> Embarkees { get; set; } = new List<IEmbarkable>();
 
         public Elevator()
         {
@@ -33,16 +39,6 @@ namespace ElevatorController.Domain
             }
         }
 
-        public void DisEmbark(IEmbarkable embarkable)
-        {
-            CurrentCapacity -= embarkable.Kilos;
-            if (CurrentFloor == TargetFloor)
-            {
-                CurrentDirection = Direction.None;
-                CurrentState = ElevatorState.Idle;
-            }
-        }
-
         public void Embark(IEmbarkable embarkable)
         {
             if (CurrentCapacity + embarkable.Kilos > MaxCapacity)
@@ -50,22 +46,55 @@ namespace ElevatorController.Domain
                 throw new ElevatorFullException();
             }
 
+            Embarkees.Add(embarkable);
             CurrentCapacity += embarkable.Kilos;
+            if(CurrentDirection == Direction.None)
+                CurrentDirection = embarkable.Direction;
         }
 
-        public void RequestFloor(int floorNumber)
+        public void Move()
         {
-            if (floorNumber > MaxFloor || floorNumber < 0)
-            {
-                throw new Exception("Invalid request floor!");
+            switch (CurrentDirection) {
+                case Direction.Up:
+                    while (this.CurrentFloor <= MaxFloor)
+                    {
+                        if (!Embarkees.Any()) break;
+
+                        CurrentState = ElevatorState.Moving;
+                        CurrentFloor++;
+                        Thread.Sleep(500);
+                        var floorDisEmbarkees = Embarkees.Where(e => e.ToFloor == CurrentFloor).ToList();
+                        if (floorDisEmbarkees.Any())
+                        {
+                            Console.WriteLine($"{floorDisEmbarkees.Sum(e => e.Kilos)} kilos disembarked on floor {CurrentFloor}");
+                        }
+
+                        Embarkees  = Embarkees.Where(e => e.ToFloor != CurrentFloor).ToList();
+                    }
+                    break;
+                case Direction.Down:
+                    while (this.CurrentFloor > 0)
+                    {
+                        if (!Embarkees.Any()) break;
+
+                        CurrentState = ElevatorState.Moving;
+                        CurrentFloor--;
+                        Thread.Sleep(500);
+                        var floorDisEmbarkees = Embarkees.Where(e => e.ToFloor == CurrentFloor).ToList();
+                        if (floorDisEmbarkees.Any())
+                        {
+                            Console.WriteLine($"{floorDisEmbarkees.Sum(e => e.Kilos)} kilos disembarked on floor {CurrentFloor}");
+                        }
+
+                        Embarkees  = Embarkees.Where(e => e.ToFloor != CurrentFloor).ToList();
+                    }
+                    break;
             }
 
-            if (CurrentDirection == Direction.None && floorNumber != CurrentFloor)
-            {
-                TargetFloor = floorNumber;
-                CurrentState = ElevatorState.Moving;
-                CurrentDirection = (TargetFloor > CurrentFloor) ? Direction.Up : Direction.Down;
-            }
+
+            
         }
+
+
     }
 }

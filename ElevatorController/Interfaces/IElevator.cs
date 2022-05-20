@@ -7,8 +7,7 @@ namespace ElevatorController.Interfaces
         int MaxCapacity { get; set; }
         ElevatorState CurrentState { get; set; }
         int CurrentFloor { get; set; }
-        void RequestFloor(int floorNumber);
         void Embark(IEmbarkable embarkable);
-        void DisEmbark(IEmbarkable embarkable);
+         void Move();
     }
 }
