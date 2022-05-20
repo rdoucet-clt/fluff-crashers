@@ -1,0 +1,58 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "WorldRunner/1.0.0": {
+        "dependencies": {
+          "ElevatorController": "1.0.0",
+          "TimeService": "1.0.0",
+          "WorldController": "1.0.0"
+        },
+        "runtime": {
+          "WorldRunner.dll": {}
+        }
+      },
+      "ElevatorController/1.0.0": {
+        "runtime": {
+          "ElevatorController.dll": {}
+        }
+      },
+      "TimeService/1.0.0": {
+        "runtime": {
+          "TimeService.dll": {}
+        }
+      },
+      "WorldController/1.0.0": {
+        "runtime": {
+          "WorldController.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "WorldRunner/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ElevatorController/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TimeService/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "WorldController/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
